@@ -1,7 +1,21 @@
+//Best suited for TurboC/C++
+#include<graphics.h>
+#include<dos.h>
+#include<stdlib.h>
 void Hydrogen(void);
 main (void)
 {
-    int x;
+    int gd=0,gm,x;
+	initgraph(&gd,&gm,"c:..//bgi");
+	setcolor(11);
+	settextstyle(2,0,13);
+	outtextxy(200,200,"Project Atomic");
+	outtextxy(200,250,"Press Enter");
+	while(!kbhit())
+	{
+		putpixel(random(getmaxx()),random(getmaxy()),random(16));
+		delay(4);
+	}
 	printf("Type an Atomic Number: \n");
 	scanf("%i", &x);
 	if (x >= 90 && x <= 103)
