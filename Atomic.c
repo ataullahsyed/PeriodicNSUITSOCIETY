@@ -2,8 +2,8 @@
 #include<graphics.h>
 #include<dos.h>
 #include<stdlib.h>
-void Hydrogen(void);
-main (void)
+void Hydrogen();
+main void()
 {
     int gd=0,gm,x;
 	initgraph(&gd,&gm,"c:..//bgi");
@@ -74,8 +74,9 @@ main (void)
 		printf("[D-Block]\nGroup No: 3\nPeriod No: 7");
 	else
 		printf("This is only calibrated upto 118 Elements as per the guidelines of NCERT textbooks.\n");
+	getch();
 }
-void Hydrogen(void)
+void Hydrogen()
 	{
 		char P;
 		printf("Group No : Undefined[1 or 17] \n\nWhat is the Valency of Hydrogen : A[-1] or B[+1]\n");
