@@ -3,12 +3,12 @@
 #include<dos.h>
 #include<stdlib.h>
 void Hydrogen();
-main void()
+void main()
 {
     int gd=0,gm,x;
 	initgraph(&gd,&gm,"c:..//bgi");
 	setcolor(11);
-	settextstyle(2,0,13);
+	settextstyle(2,0,9);
 	outtextxy(200,200,"Project Atomic");
 	outtextxy(200,250,"Press Enter");
 	while(!kbhit())
